@@ -1,1 +1,65 @@
 
+body {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+.data-form {
+    background-color: rgb(1, 146, 25);
+    padding: 10px 150px 10px 150px;
+    border-radius: 25px;
+}
+
+.data-form h1 {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.data-form div {
+    margin-bottom: 35px;
+}
+
+.data-form label {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.data-form input[type="text"],
+.data-form input[type="password"],
+.data-form input[type="tel"],
+.data-form textarea {
+    font-size:13pt;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+.button-submit {
+    display: block;
+    margin: 0 auto;
+}
+
+.button-submit button {
+    color: rgb(255,255,255);
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px 10px 20px;
+    background-color: #10c316;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-submit button:hover {
+    background-color: #08b811;
+}
