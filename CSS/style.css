@@ -6,10 +6,20 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #000000;
+    background-color: #ada5a5;
+    font-size:13pt;
 }
 
+.logo-sapit img {
+    border-radius: 25px;
+    margin: 15px auto auto auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
 .data-form {
+    margin: auto auto 7% auto;
     background-color: rgb(1, 146, 25);
     padding: 10px 150px 10px 150px;
     border-radius: 25px;
@@ -35,7 +45,6 @@ body {
 .data-form input[type="password"],
 .data-form input[type="tel"],
 .data-form textarea {
-    font-size:13pt;
     color: rgb(0, 0, 0);
     width: 200px;
     padding: 5px 10px 5px 10px;
@@ -51,7 +60,6 @@ body {
 .button-submit button {
     color: rgb(255,255,255);
     font-weight: bold;
-    display: block;
     margin: 0 auto;
     padding: 10px 20px 10px 20px;
     background-color: #10c316;
@@ -60,6 +68,24 @@ body {
     cursor: pointer;
 }
 
+.button-submit a {
+    text-decoration: none; /* Remove o sublinhado */
+    text-align: center;
+    color: rgb(255,255,255);
+    display: block;
+    margin: 10px 50px 10px 50px;
+    padding: 5px 0px 5px 0px;
+    background-color: #10c316;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 .button-submit button:hover {
+    background-color: #08b811;
+}
+
+.button-submit a:hover {
     background-color: #08b811;
 }
