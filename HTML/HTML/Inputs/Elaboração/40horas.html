@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elaboração 40 horas...</title>
+    <link rel="shortcut icon" href="Imagens/s.png" type="image/x-icon">
+</head>
+<body>
+    <h4>Selecione as Disciplinas Desejadas...</h4>
+    <form action="/processar_disciplinas" method="post">
+        <label for="fisica1">
+            <input type="checkbox" id="fisica1" name="disciplinas[]" value="Física I">
+            Física I
+        </label><br>
+        <label for="fisica2">
+            <input type="checkbox" id="fisica2" name="disciplinas[]" value="Física II">
+            Física II
+        </label><br>
+        <label for="fisica3">
+            <input type="checkbox" id="fisica3" name="disciplinas[]" value="Física III">
+            Física III
+        </label><br>
+        <!-- Adicione mais disciplinas conforme necessário -->
+        <a href="distribuição.html"><button type="button">Continuar</button></a>
+    </form>
+</body>
+</html>
