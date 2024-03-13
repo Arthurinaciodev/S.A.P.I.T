@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuição</title>
+    <link rel="shortcut icon" href="Imagens/s.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Distribuição de Horas</h1>
+    <form id="hoursForm" action="/processar_horas" method="post">
+        <table>
+            <tr> 
+                <h4>Prencha de acordo com  a sua carga horária...</h4>
+                <th>Atividade</th>
+                <th>Horas</th>
+            </tr>
+            <tr>
+                <td>Aula</td>
+                <td><input type="number" name="aula" id="aula" value="10" readonly></td>
+            </tr>
+            <tr>
+                <td>Preparação e Manutenção</td>
+                <td><input type="number" name="preparacao_manutencao" id="preparacao_manutencao" value="10" readonly></td>
+            </tr>
+            <tr>
+                <td>Apoio ao Ensino</td>
+                <td><input type="number" name="apoio_ensino" id="apoio_ensino" value="9" readonly></td>
+            </tr>
+            <tr>
+                <td>Projeto de Ensino</td>
+                <td><input type="number" name="projeto_ensino" id="projeto_ensino" value="6" readonly></td>
+            </tr>
+            <tr>
+                <td>Atendimento, Acompanhamento, Reuniões</td>
+                <td><input type="number" name="atendimento_reunioes" id="atendimento_reunioes" value="5" readonly></td>
+            </tr>
+        </table>
+        <label for="justificativa">Justificativa:</label><br>
+        <textarea id="justificativa" name="justificativa" rows="4" cols="50"></textarea><br>
+        <a href="salvo.html"><button type="button">Salvar</button></a>
+    </form>
+
+</body>
+</html>
