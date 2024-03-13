@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="\CSS\elaboracao.css">
+    <title>Elaboração Automática do PIT</title>
+</head>
+<body>
+    <div>
+        <h1>SAPIT</h1>
+        <p>Olá Professor, bem vindo ao SAPIT - Sistema Automático do Plano Individual do Trabalho Docente</p>
+    </div>
+    <form>
+        <!-- Seleção de Disciplinas -->
+        <label>Escolha as Disciplinas:</label>
+        <br>
+        <input type="checkbox" id="portugues" name="disciplinas" value="portugues">
+        <label for="portugues">Português</label>
+        <br>
+        <input type="checkbox" id="literatura" name="disciplinas" value="literatura">
+        <label for="literatura">Literatura e redação</label>
+        <br>
+        <input type="checkbox" id="matematica" name="disciplinas" value="matematica">
+        <label for="matematica">Matemática</label>
+        <br>
+        <input type="checkbox" id="biologia" name="disciplinas" value="biologia">
+        <label for="biologia">Biologia</label>
+        <br>
+        <input type="checkbox" id="Quimica" name="disciplinas" value="quimica">
+        <label for="Química">Química</label>
+        <br>
+        <input type="checkbox" id="fisica" name="disciplinas" value="fisica">
+        <label for="fisica">Física</label>
+        <br>
+        <input type="checkbox" id="geografia" name="disciplinas" value="geografia"> 
+        <label for="geografia">Geografia</label>
+        <br>
+        <input type="checkbox" name="disciplinas" id="historia" value="historia">
+        <label for="historia">História</label>
+        <br>
+        <input type="checkbox" name="disciplinas" id="filosofia" value="filosofia">
+        <label for="filosofia">Filosofia</label>
+        <br>
+        <input type="checkbox" name="disciplinas" value="sociologia">
+        <label for="sociologia">Sociologia</label>
+        <br>
+        <input type="checkbox" name="disciplinas" value="artes">
+        <label for="artes">Artes</label>
+        <br>
+        <input type="checkbox" name="disciplinas" value="espanhol">
+        <label for="espanhol">Espanhol</label>
+        <br>
+        <input type="checkbox" name="disciplinas" value="ingles">
+        <label for="ingles">Inglês</label>
+        <br>
+        <!-- Seleção de Horas -->
+        <label for="horas">Escolha a Carga Horária:</label>
+        <select id="horas" name="horas" onchange="mostrarJustificativa()">
+            <option value="20">20 horas</option>
+            <option value="40">40 horas dedicação exclusiva</option>
+            <option value="40-de">40 horas sem dedicação exclusiva</option>
+        </select>
+        <div id="justificativaContainer" style="display: none;">
+            <label for="justificativa">Justificativa (menos de 10 horas):</label>
+            <textarea id="justificativa" name="justificativa"></textarea>
+        </div>
+
+        <!-- Botão de envio -->
+        <button onclick="window.location.href='inputs/Cadrastro/cadastro.html'">Cadrastro</button>   
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="\CSS\cadastro.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="logo-sapit">
+        <img src="imagens/logo-sapit.png" alt="">
+    </div>
+
+    <div class="data-form">
+        <h1>Cadastro SAPIT</h1>
+        <form action="" method="post">  <!--No action coloca o diretorio do javascript que vai coletar os dados - Essa parte fica com o Marcos-->
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Nome completo">
+                <label for="">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" required placeholder="Digite seu número de telefone">
+                <label for="campus">Campus:</label>
+                <select name="" id="">
+                    <option value="">Araguatins</option>
+                    <option value="">Palmas</option>
+                </select>
+            </div>
+
+            <div>
+               <label for="carga">Carga Horária</label>
+               <input type="checkbox" value="20h" id="branco">20h
+               <input type="checkbox" value="40h" class="branco">40h
+               <input type="checkbox" value="40h DE" class="branco">40h DE
+            </div>
+            
+            <div>
+                <label for="cargo-de-trabalho">Situação de trabalho</label>
+                <select id="cargo-de-trabalho" name="cargo-de-trabalho">
+                    <optgroup label="Efetivo">
+                        <option value="20h">20h</option>
+                        <option value="40h">40h</option>
+                        <option value="40h-de">40h DE</option>
+                    </optgroup>
+                    <optgroup label="Substituto">
+                        <option value="20h">20h</option>
+                        <option value="40h">40h</option>
+                        <option value="40h-de">40h DE</option>
+                    </optgroup>
+                    <optgroup label="Temporário">
+                        <option value="20h">20h</option>
+                        <option value="40h">40h</option>
+                        <option value="40h-de">40h DE</option>
+                    </optgroup>
+                </select>
+
+            </div>
+            <div class="button-submit">
+                <button type="submit" class="button-submit">Enviar</button><br>
+            </div>
+        </form>
+    </div>  
+</body>
+</html>
