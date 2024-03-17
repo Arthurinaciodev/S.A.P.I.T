@@ -1,6 +1,7 @@
 CREATE DATABASE sapit;
 USE sapit;
 CREATE TABLE cadastro_prof (
+	codigo int primary key auto_increment,
 	nome VARCHAR(70),
 	email VARCHAR(60),
 	data_nasc INT(20),
