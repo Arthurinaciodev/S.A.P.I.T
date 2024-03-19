@@ -10,68 +10,82 @@
     <title>Elaboração Automática do PIT</title>
 </head>
 <body>
-    <div>
-        <h1>SAPIT</h1>
-        <p>Olá Professor, bem vindo ao SAPIT - Sistema Automático do Plano Individual do Trabalho Docente</p>
+    <div class="logo">
+        <img src="../Imagens/logo-sapit.png" alt="">
     </div>
-    <form>
-        <!-- Seleção de Disciplinas -->
-        <label>Escolha as Disciplinas:</label>
-        <br>
-        <input type="checkbox" id="portugues" name="disciplinas" value="portugues">
-        <label for="portugues">Português</label>
-        <br>
-        <input type="checkbox" id="literatura" name="disciplinas" value="literatura">
-        <label for="literatura">Literatura e redação</label>
-        <br>
-        <input type="checkbox" id="matematica" name="disciplinas" value="matematica">
-        <label for="matematica">Matemática</label>
-        <br>
-        <input type="checkbox" id="biologia" name="disciplinas" value="biologia">
-        <label for="biologia">Biologia</label>
-        <br>
-        <input type="checkbox" id="Quimica" name="disciplinas" value="quimica">
-        <label for="Química">Química</label>
-        <br>
-        <input type="checkbox" id="fisica" name="disciplinas" value="fisica">
-        <label for="fisica">Física</label>
-        <br>
-        <input type="checkbox" id="geografia" name="disciplinas" value="geografia"> 
-        <label for="geografia">Geografia</label>
-        <br>
-        <input type="checkbox" name="disciplinas" id="historia" value="historia">
-        <label for="historia">História</label>
-        <br>
-        <input type="checkbox" name="disciplinas" id="filosofia" value="filosofia">
-        <label for="filosofia">Filosofia</label>
-        <br>
-        <input type="checkbox" name="disciplinas" value="sociologia">
-        <label for="sociologia">Sociologia</label>
-        <br>
-        <input type="checkbox" name="disciplinas" value="artes">
-        <label for="artes">Artes</label>
-        <br>
-        <input type="checkbox" name="disciplinas" value="espanhol">
-        <label for="espanhol">Espanhol</label>
-        <br>
-        <input type="checkbox" name="disciplinas" value="ingles">
-        <label for="ingles">Inglês</label>
-        <br>
-        <!-- Seleção de Horas -->
-        <label for="horas">Escolha a Carga Horária:</label>
-        <select id="horas" name="horas" onchange="mostrarJustificativa()">
-            <option value="20">20 horas</option>
-            <option value="40">40 horas dedicação exclusiva</option>
-            <option value="40-de">40 horas sem dedicação exclusiva</option>
-        </select>
-        <div id="justificativaContainer" style="display: none;">
-            <label for="justificativa">Justificativa (menos de 10 horas):</label>
-            <textarea id="justificativa" name="justificativa"></textarea>
-        </div>
+    <div class="form-disciplinas">
+        <form class="form-disciplinas">
+            <p id="text-big">Olá Professor, bem vindo ao SAPIT - Sistema Automático do Plano Individual do Trabalho Docente</p>
+            <label>Escolha a disciplina na qual é responsável:</label>
+            <br>
+            <hr>
+            <input type="checkbox" id="portugues" name="disciplinas" value="portugues">
+            <label for="portugues">Português</label>
+            <br>
+            <hr>
+            <input type="checkbox" id="literatura" name="disciplinas" value="literatura">
+            <label for="literatura">Literatura e redação</label>
+            <br> 
+            <hr>
+            <input type="checkbox" id="matematica" name="disciplinas" value="matematica">
+            <label for="matematica">Matemática</label>
+            <br> 
+            <hr>
+            <input type="checkbox" id="biologia" name="disciplinas" value="biologia">
+            <label for="biologia">Biologia</label>
+            <br> 
+            <hr>
+            <input type="checkbox" id="Quimica" name="disciplinas" value="quimica">
+            <label for="Química">Química</label>
+            <br> 
+            <hr>
+            <input type="checkbox" id="fisica" name="disciplinas" value="fisica">
+            <label for="fisica">Física</label>
+            <br> 
+            <hr>
+            <input type="checkbox" id="geografia" name="disciplinas" value="geografia"> 
+            <label for="geografia">Geografia</label>
+            <br> 
+            <hr>
+            <input type="checkbox" name="disciplinas" id="historia" value="historia">
+            <label for="historia">História</label>
+            <br> 
+            <hr>
+            <input type="checkbox" name="disciplinas" id="filosofia" value="filosofia">
+            <label for="filosofia">Filosofia</label>
+            <br> 
+            <hr>
+            <input type="checkbox" name="disciplinas" value="sociologia">
+            <label for="sociologia">Sociologia</label>
+            <br> 
+            <hr>
+            <input type="checkbox" name="disciplinas" value="artes">
+            <label for="artes">Artes</label>
+            <br> 
+            <hr>
+            <input type="checkbox" name="disciplinas" value="espanhol">
+            <label for="espanhol">Espanhol</label>
+            <br> 
+            <hr>
+            <input type="checkbox" name="disciplinas" value="ingles">
+            <label for="ingles">Inglês</label>
+            <br> 
+            <hr>
+            <!-- Seleção de Horas -->
+            <label for="horas">Escolha a Carga Horária:</label>
+            <select id="horas" name="horas" onchange="mostrarJustificativa()">
+                <option value="20">20 horas</option>
+                <option value="40">40 horas dedicação exclusiva</option>
+                <option value="40-de">40 horas sem dedicação exclusiva</option>
+            </select>
+            <div id="justificativaContainer" style="display: none;">
+                <label for="justificativa">Justificativa (menos de 10 horas):</label>
+                <textarea id="justificativa" name="justificativa"></textarea>
+            </div>
 
-        <!-- Botão de envio -->
-        <button onclick="window.location.href='inputs/Cadrastro/cadastro.html'">Cadrastro</button>   
-    </form>
-
+            <!-- Botão de envio -->
+            <a href="../Tabela-Pit/tabela.html">Criar PIT</a>   
+        </form>
+    </div>
 </body>
 </html>

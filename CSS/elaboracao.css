@@ -2,9 +2,85 @@
     font-family: "Oswald", sans-serif;
 }
 
-
-
 body {
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 1440px;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 15px;
+}
+.logo {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    border: 4px solid rgb(1, 146, 25);
+    border-radius: 25px;
+    height: 100px;
+}
+
+#text-big {
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0)
+
+}
+
+.form-disciplinas {
+    font-size: 15pt;
+    text-align: center;
+}
+
+.form-disciplinas form {
+    display: inline-block;
+    text-align: left;
+}
+
+
+.form-disciplinas label {
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #08b811;
+}
+
+.form-disciplinas select {
+    font-size: 12pt;
+    font-style: bold;
+    color: rgb(255, 255, 255);
+    background-color: #08b811;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.form-disciplinas a {
+    text-decoration: none;
+    font-size: 12pt;
+    font-style: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #08b811;
+}
+/* Estilizando os checkboxes */
+.form-disciplinas input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255); /* Cor padrão (azul) */
+    border-radius: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+    margin-right: 5px; /* Espaçamento entre os checkboxes */
+}
+
+/* Estilizando os checkboxes quando marcados */
+.form-disciplinas input[type="checkbox"]:checked {
+    background-color:#08b811; /* Cor laranja */
 }

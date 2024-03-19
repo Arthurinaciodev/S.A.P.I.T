@@ -26,8 +26,10 @@
                 <input type="tel" name="telefone" id="telefone" required placeholder="Digite seu número de telefone">
                 <label for="campus">Campus:</label>
                 <select name="" id="">
-                    <option value="">Araguatins</option>
-                    <option value="">Palmas</option>
+                    <option value="araguatins">Araguatins</option>
+                    <option value="palmas">Palmas</option>
+                    <option value="araguaina">Araguaína</option>
+                    <option value=""></option>
                 </select>
             </div>
 
@@ -39,7 +41,7 @@
             </div>
             
             <div>
-                <label for="cargo-de-trabalho">Situação de trabalho</label>
+                <label for="cargo-de-trabalho">Professor(a)</label>
                 <select id="cargo-de-trabalho" name="cargo-de-trabalho">
                     <optgroup label="Efetivo">
                         <option value="20h">20h</option>
@@ -61,6 +63,7 @@
             </div>
             <div class="button-submit">
                 <button type="submit" class="button-submit">Enviar</button><br>
+                <a href="#" onclick="history.back()">Voltar</a>
             </div>
         </form>
     </div>  

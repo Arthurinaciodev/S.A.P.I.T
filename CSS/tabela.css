@@ -1,0 +1,45 @@
+* {
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background-color: rgb(255,255,255);
+}
+
+.logo {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    border: 4px solid rgb(1, 146, 25);
+    border-radius: 25px;
+    height: 100px;
+}
+
+
+.table-pit {
+    display: flex;
+    justify-content:center ;
+    margin: 10px;
+}
+
+table {
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 12pt;
+    color: rgb(255,255,255);
+    background-color: rgb(132, 151, 135);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+td {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #29d831;
+    border: 2px solid black;
+}
+
+tr {
+    border: 2px solid black;
+}
